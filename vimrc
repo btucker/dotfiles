@@ -54,7 +54,8 @@ set et
 set ai
 syntax on
 set nu
-colorscheme zellner
+set background=dark
+colorscheme solarized
 highlight Normal guibg=#fef2db
 set encoding=utf8
 set fileencoding=utf8
