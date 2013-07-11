@@ -34,6 +34,10 @@ call SetupVAM()
 :command W w
 :command Q q
 
+if exists("+colorcolumn")
+  set colorcolumn=80
+endif
+
 imap jj <Esc>
 
 let mapleader = ","
