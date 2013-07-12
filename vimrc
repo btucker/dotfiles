@@ -46,7 +46,7 @@ map <Leader>c :s/^/#/<cr>
 map <Leader>C :s/^#//<cr>
 
 " hard-wrap the current line
-map <Leader>w gqaw
+map <Leader>w gww
 
 set laststatus=2
 au VimResized * :wincmd = 
