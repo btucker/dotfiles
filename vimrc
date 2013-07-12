@@ -45,6 +45,9 @@ let mapleader = ","
 map <Leader>c :s/^/#/<cr>
 map <Leader>C :s/^#//<cr>
 
+" hard-wrap the current line
+map <Leader>w gqaw
+
 set laststatus=2
 au VimResized * :wincmd = 
 
