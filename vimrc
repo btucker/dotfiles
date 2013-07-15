@@ -41,6 +41,8 @@ map <Leader>C :s/^#//<cr>
 " hard-wrap the current line
 map <Leader>w gww
 
+map <Leader>n :set invnumber<CR>
+
 set laststatus=2
 au VimResized * :wincmd = 
 
@@ -53,7 +55,7 @@ set sw=2
 set et
 set ai
 syntax on
-set nu
+" set nu
 set background=dark
 colorscheme solarized
 highlight Normal guibg=#fef2db
@@ -84,7 +86,7 @@ cnoremap <C-B> <Left>
 cnoremap <Esc>b <S-Left>
 cnoremap <Esc>f <S-Right>
 
-highlight LineNr ctermfg=black
+highlight LineNr ctermfg=grey
 let g:bufferline_echo=0
 let g:airline_powerline_fonts=1
 let g:airline_theme='badwolf'
