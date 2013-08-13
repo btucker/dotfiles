@@ -21,6 +21,7 @@ Bundle "airblade/vim-gitgutter"
 Bundle "nono/vim-handlebars"
 Bundle "bling/vim-bufferline"
 Bundle "bling/vim-airline"
+Bundle "godlygeek/tabular"
 
 :command WQ wq
 :command Wq wq
