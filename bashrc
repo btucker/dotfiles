@@ -1,5 +1,3 @@
-source ~/.profile
-
 export PATH="/usr/local/heroku/bin:$PATH:$HOME/.rvm/bin"
 
 eval "$(hub alias -s)"
