@@ -96,3 +96,17 @@ highlight LineNr ctermfg=grey
 let g:bufferline_echo=0
 let g:airline_powerline_fonts=1
 let g:airline_theme='badwolf'
+
+" rails.vim config
+let g:rails_projections = {
+  \ "app/uploaders/*_uploader.rb": {
+  \   "command": "uploader",
+  \   "template":
+  \     "class %SUploader < CarrierWave::Uploader::Base\nend",
+  \   "test": [
+  \     "test/unit/%s_uploader_test.rb",
+  \     "spec/models/%s_uploader_spec.rb"
+  \   ],
+  \   "keywords": "process version"
+  \ },
+  \ "config/routes.rb": {"command": ["outes", "routes"]}}
