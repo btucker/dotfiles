@@ -87,6 +87,11 @@ cnoremap <C-B> <Left>
 cnoremap <Esc>b <S-Left>
 cnoremap <Esc>f <S-Right>
 
+" scrollwheel support
+set mouse=a
+map <ScrollWheelUp> <C-Y>
+map <ScrollWheelDown> <C-E>
+
 highlight LineNr ctermfg=grey
 let g:bufferline_echo=0
 let g:airline_powerline_fonts=1
