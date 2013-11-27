@@ -99,21 +99,24 @@ let g:bufferline_echo=0
 let g:airline_powerline_fonts=1
 let g:airline_theme='badwolf'
 
-" Tab completion options
-set wildmode=list:longest,list:full
-set complete=.,w,t
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_rails = 1
 
-" Indent if we're at the beginning of a line. Else, do completion.
-function! InsertTabWrapper()
-    let col = col('.') - 1
-    if !col || getline('.')[col - 1] !~ '\k'
-        return "\<tab>"
-    else
-        return "\<c-p>"
-    endif
-endfunction
-inoremap <tab> <c-r>=InsertTabWrapper()<cr>
-inoremap <s-tab> <c-n>
+" Tab completion options
+" set wildmode=list:longest,list:full
+" set complete=.,w,t
+" 
+" " Indent if we're at the beginning of a line. Else, do completion.
+" function! InsertTabWrapper()
+"     let col = col('.') - 1
+"     if !col || getline('.')[col - 1] !~ '\k'
+"         return "\<tab>"
+"     else
+"         return "\<c-p>"
+"     endif
+" endfunction
+" inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+" inoremap <s-tab> <c-n>
 
 " rails.vim config
 let g:rails_projections = {
