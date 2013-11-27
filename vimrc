@@ -49,8 +49,8 @@ map <Leader>r :set rnu<CR>
 set laststatus=2
 au VimResized * :wincmd = 
 
-" highlight trailing whitespace
-match ErrorMsg '\s\+$'
+" highlight trailing whitespace that's not at the beginning of a line
+match ErrorMsg '\(\S\+\)\@<=\s\+$'
 
 filetype plugin indent on
 set ts=2
