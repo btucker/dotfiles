@@ -44,6 +44,7 @@ map <Leader>C :s/^#//<cr>
 map <Leader>w gww
 
 map <Leader>n :set invnumber<CR>
+map <Leader>r :set rnu<CR>
 
 set laststatus=2
 au VimResized * :wincmd = 
