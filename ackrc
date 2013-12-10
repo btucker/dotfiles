@@ -1,4 +1,5 @@
 --type-set=haml=.haml
 --type-set=scss=.scss
 --type-set=coffee=.coffee
+--ignore-directory=log
 --color-lineno=red
