@@ -20,9 +20,10 @@ Bundle "mileszs/ack.vim"
 Bundle "altercation/vim-colors-solarized"
 Bundle "airblade/vim-gitgutter"
 Bundle "nono/vim-handlebars"
-Bundle "bling/vim-bufferline"
 Bundle "bling/vim-airline"
 Bundle "godlygeek/tabular"
+Bundle "scrooloose/syntastic"
+Bundle "justinmk/vim-sneak"
 
 :command WQ wq
 :command Wq wq
@@ -95,9 +96,9 @@ map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
 highlight LineNr ctermfg=grey
-let g:bufferline_echo=0
 let g:airline_powerline_fonts=1
 let g:airline_theme='badwolf'
+let g:airline#extensions#tabline#enabled = 1
 
 let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_rails = 1
