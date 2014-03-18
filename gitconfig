@@ -18,6 +18,7 @@
   untracked = cyan
 [color]
   ui = true
+	diff = true
 [color "diff"]
   whitespace = red reverse
 [core]
@@ -35,3 +36,8 @@
 	default = upstream
 [web]
 	browser = open
+[init]
+	templatedir = ~/.git-template
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
