@@ -24,6 +24,8 @@ Bundle "bling/vim-airline"
 Bundle "godlygeek/tabular"
 Bundle "scrooloose/syntastic"
 Bundle "justinmk/vim-sneak"
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
 
 :command WQ wq
 :command Wq wq
@@ -46,6 +48,9 @@ map <Leader>w gww
 
 map <Leader>n :set invnumber<CR>
 map <Leader>r :set rnu<CR>
+
+" Dash
+nmap <silent> <leader>d <Plug>DashSearch
 
 set laststatus=2
 au VimResized * :wincmd = 
