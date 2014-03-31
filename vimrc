@@ -8,12 +8,12 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
-Bundle "ervandew/supertab"
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-eunuch'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-endwise'
 Bundle "cakebaker/scss-syntax.vim"
 Bundle "kchmck/vim-coffee-script"
 Bundle "mileszs/ack.vim"
@@ -24,8 +24,10 @@ Bundle "bling/vim-airline"
 Bundle "godlygeek/tabular"
 Bundle "scrooloose/syntastic"
 Bundle "justinmk/vim-sneak"
+Bundle "ervandew/supertab"
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
+Bundle 'tomtom/tcomment_vim'
 
 :command WQ wq
 :command Wq wq
@@ -40,8 +42,8 @@ imap jj <Esc>
 
 let mapleader = ","
 
-map <Leader>c :s/^/#/<cr>
-map <Leader>C :s/^#//<cr>
+map <Leader>c :TComment<cr>
+map <Leader>v :e $MYVIMRC<cr>
 
 " hard-wrap the current line
 map <Leader>w gww
@@ -109,20 +111,19 @@ let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_rails = 1
 
 " Tab completion options
-" set wildmode=list:longest,list:full
-" set complete=.,w,t
-" 
-" " Indent if we're at the beginning of a line. Else, do completion.
-" function! InsertTabWrapper()
-"     let col = col('.') - 1
-"     if !col || getline('.')[col - 1] !~ '\k'
-"         return "\<tab>"
-"     else
-"         return "\<c-p>"
-"     endif
-" endfunction
-" inoremap <tab> <c-r>=InsertTabWrapper()<cr>
-" inoremap <s-tab> <c-n>
+set wildmode=list:longest,list:full
+set complete=.,w,t
+" Indent if we're at the beginning of a line. Else, do completion.
+function! InsertTabWrapper()
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+        return "\<tab>"
+    else
+        return "\<c-p>"
+    endif
+endfunction
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <s-tab> <c-n>
 
 " rails.vim config
 let g:rails_projections = {
