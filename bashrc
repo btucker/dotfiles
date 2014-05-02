@@ -1,10 +1,13 @@
-export PATH="/usr/local/heroku/bin:$PATH:$HOME/.rvm/bin"
+export GOHOME="$HOME/.go"
+export PATH="/usr/local/heroku/bin:$PATH:$HOME/.rvm/bin:$GOHOME/bin"
 
 eval "$(hub alias -s)"
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
+
+source ~/perl5/perlbrew/etc/bashrc
 
 function cdgem() { pushd `bundle show $@` ;}
 function ackgems() { ack $@ `bundle show --paths` ;}
