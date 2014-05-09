@@ -13,7 +13,7 @@ function cdgem() { pushd `bundle show $@` ;}
 function ackgems() { ack $@ `bundle show --paths` ;}
 alias ackgem=ackgems
 alias duhs="du -hs * | /usr/local/Cellar/coreutils/8.21/libexec/gnubin/sort -h -r"
-function hotfix() { bundle exec cap production deploy:hotfix FILES="$@" ;}
+function hotfix() { bundle exec cap $@ deploy:hotfix FILES=`git show --name-only --pretty="format:" | perl -pe 's/(\w)\n/\1,/g; s/\n//g'` ;}
 
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
