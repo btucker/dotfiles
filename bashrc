@@ -8,6 +8,7 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 source ~/perl5/perlbrew/etc/bashrc
+source /usr/local/bin/virtualenvwrapper.sh
 
 function cdgem() { pushd `bundle show $@` ;}
 function ackgems() { ack $@ `bundle show --paths` ;}
