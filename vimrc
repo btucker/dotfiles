@@ -17,6 +17,7 @@ Bundle 'tpope/vim-endwise'
 Bundle "cakebaker/scss-syntax.vim"
 Bundle "kchmck/vim-coffee-script"
 Bundle "mileszs/ack.vim"
+Bundle "rking/ag.vim"
 Bundle "altercation/vim-colors-solarized"
 Bundle "airblade/vim-gitgutter"
 Bundle "nono/vim-handlebars"
@@ -51,6 +52,13 @@ map <Leader>w gww
 
 map <Leader>n :set invnumber<CR>
 map <Leader>r :set rnu<CR>
+
+" ctags
+map <Leader>t <C-]>
+map <Leader>b <C-t>
+
+" find the word under the cursor with ack
+map <Leader>f :Ag <C-R><C-W><CR>
 
 " Dash
 nmap <silent> <leader>d <Plug>DashSearch
