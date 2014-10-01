@@ -30,6 +30,7 @@ Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'jaxbot/github-issues.vim'
+Bundle 'vim-scripts/LargeFile'
 
 :command WQ wq
 :command Wq wq
@@ -149,3 +150,4 @@ let g:rails_projections = {
   \ "config/routes.rb": {"command": ["outes", "routes"]}}
 
 source ~/.vim/private
+source ~/.vim/zipPlugin.vim
