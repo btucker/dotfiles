@@ -14,6 +14,7 @@ Bundle 'tpope/vim-eunuch'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-unimpaired'
 Bundle "cakebaker/scss-syntax.vim"
 Bundle "kchmck/vim-coffee-script"
 Bundle "mileszs/ack.vim"
@@ -29,8 +30,8 @@ Bundle "ervandew/supertab"
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 Bundle 'tomtom/tcomment_vim'
-Bundle 'jaxbot/github-issues.vim'
 Bundle 'vim-scripts/LargeFile'
+Bundle 'elzr/vim-json'
 
 :command WQ wq
 :command Wq wq

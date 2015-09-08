@@ -31,6 +31,7 @@
   co = checkout
   df = diff
   lg = log -p
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [github]
   user = btucker
 [push]
@@ -42,3 +43,7 @@
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[http]
+	postBuffer = 157286400
+[ui]
+	color = true
