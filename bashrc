@@ -22,7 +22,7 @@ alias raisl=rails
 function hotfix() { bundle exec cap $@ deploy:hotfix FILES=`git show --name-only --pretty="format:" | perl -pe 's/(\w)\n/\1,/g; s/\n//g'` ;}
 
 function vi() {
-  if [[ "$@" =~ (.+?):([0-9]+) ]]; then
+  if [[ $@ =~ ^([^:]+):([0-9]+)$ ]]; then
     echo "match";
     vim ${BASH_REMATCH[1]} +${BASH_REMATCH[2]};
   else
