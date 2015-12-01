@@ -9,6 +9,8 @@ fi
 
 source ~/perl5/perlbrew/etc/bashrc
 source /usr/local/bin/virtualenvwrapper.sh
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 function cdgem() { pushd `bundle show $@` ;}
 function ackgems() { ack $@ `bundle show --paths` ;}
