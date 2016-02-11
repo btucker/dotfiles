@@ -32,6 +32,8 @@ Bundle 'rizzatti/dash.vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'vim-scripts/LargeFile'
 Bundle 'elzr/vim-json'
+Bundle 'derekwyatt/vim-scala'
+Bundle 'laurentgoudet/vim-howdoi'
 
 :command WQ wq
 :command Wq wq
@@ -64,6 +66,9 @@ map <Leader>f :Ag <C-R><C-W><CR>
 
 " Dash
 nmap <silent> <leader>d <Plug>DashSearch
+
+" quote the current word
+map <Leader>q ysiw"
 
 set laststatus=2
 au VimResized * :wincmd = 
