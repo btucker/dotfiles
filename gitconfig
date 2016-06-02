@@ -1,6 +1,7 @@
 [user]
 	email = ben@btucker.net
 	name = Ben Tucker
+	signingkey = E0CE45FB
 [color]
   ui = auto
 [color "branch"]
@@ -29,6 +30,7 @@
   ci = commit
   br = branch
   co = checkout
+  coa = !git checkout $2 $3 && git add $3
   df = diff
   lg = log -p
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
@@ -48,3 +50,5 @@
 	postBuffer = 157286400
 [ui]
 	color = true
+[credential]
+	helper = osxkeychain
