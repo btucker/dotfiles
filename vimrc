@@ -23,6 +23,7 @@ Bundle "altercation/vim-colors-solarized"
 Bundle "airblade/vim-gitgutter"
 Bundle "nono/vim-handlebars"
 Bundle "bling/vim-airline"
+Bundle "vim-airline/vim-airline-themes"
 Bundle "godlygeek/tabular"
 Bundle "scrooloose/syntastic"
 Bundle "justinmk/vim-sneak"
@@ -34,6 +35,7 @@ Bundle 'vim-scripts/LargeFile'
 Bundle 'elzr/vim-json'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'laurentgoudet/vim-howdoi'
+" Bundle 'junegunn/fzf.vim'
 
 :command WQ wq
 :command Wq wq
@@ -43,6 +45,9 @@ Bundle 'laurentgoudet/vim-howdoi'
 if exists("+colorcolumn")
   set colorcolumn=80
 endif
+
+" tell syntastic to use eslint
+let g:syntastic_javascript_checkers = ['eslint']
 
 imap jj <Esc>
 
