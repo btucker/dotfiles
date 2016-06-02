@@ -66,3 +66,8 @@ alias cen='osascript ~/.termtile/center.scpt '
 alias max='osascript ~/.termtile/maximize.scpt '
 alias sn='osascript ~/.termtile/changeScreen.scpt next'
 
+
+# added by travis gem
+[ -f /Users/btucker/.travis/travis.sh ] && source /Users/btucker/.travis/travis.sh
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
