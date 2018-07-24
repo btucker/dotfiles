@@ -1,7 +1,7 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -25,7 +25,8 @@ Bundle "nono/vim-handlebars"
 Bundle "bling/vim-airline"
 Bundle "vim-airline/vim-airline-themes"
 Bundle "godlygeek/tabular"
-Bundle "scrooloose/syntastic"
+" Bundle "scrooloose/syntastic"
+Plugin 'w0rp/ale'
 Bundle "justinmk/vim-sneak"
 Bundle "ervandew/supertab"
 Bundle 'rizzatti/funcoo.vim'
@@ -35,6 +36,8 @@ Bundle 'vim-scripts/LargeFile'
 Bundle 'elzr/vim-json'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'laurentgoudet/vim-howdoi'
+Bundle 'pangloss/vim-javascript'
+Bundle 'mxw/vim-jsx'
 " Bundle 'junegunn/fzf.vim'
 
 :command WQ wq
